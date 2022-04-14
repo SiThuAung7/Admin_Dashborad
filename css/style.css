@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap');
+
+:root{
+    --primary-soft: #f2eeee;
+    --light: #ffffff;
+}
+body{
+    overflow-x: hidden;
+}
+/* Sidebar */
+.sidebar{
+    background-color: var(--light);
+}
+.nav-link.nav-link.text-secondary:hover{
+    background-color: #eee;
+}
+.nav-content{
+    transition: 0.5s;
+}
+.nav-content:hover{
+    transform: translateX(5px);
+}
+
+/* Content */
+.content{
+    background-color: var(--primary-soft);
+    overflow: scroll;
+}
+.content .header{
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+.btn-link{
+    cursor: pointer;
+    text-decoration: none;
+}
+.profile-img{
+    width: 1.2em;
+    border-radius: 50%;
+}
+.status-card{
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.status-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.status-card:active{
+    transform: scale(1.01);
+}
+.chart-card{
+    transition: 0.2s;
+    cursor: pointer;
+}
+.img-ov{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    margin-left: -16px;
+}
+.item-carousel{
+    cursor: pointer;
+    margin-top: -2.8em;
+}
+.item-card-img{
+    height: 125px;
+    transition: 0.2s ease-in-out;
+}
+.item-carousel:hover .item-card-img{
+    transform: translateY(-13px);
+    transform: rotate(10deg);
+    transform: rotateZ(10deg);
+}
+.carousel-indicators .indicator-btn{
+    background-color: #ccc;
+}
+.doughnut-chart{
+    margin-bottom: 2em;
+}
+.badge-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 3000;
+}
+
+
+@media (max-width: 1240px) {
+    .sidebar{
+        position: fixed;
+        width: 15em;
+        z-index: 2001;
+        display: block !important;
+        margin-left: -100%;
+    }
+}

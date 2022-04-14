@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBorad</title>
+    
+    <!-- bootstrap file link -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    
+    <!-- animate file link -->
+    <link rel="stylesheet" href="vendor/animate/animate.min.css">
+
+    <!-- feather Icon file link -->
+    <link rel="stylesheet" href="vendor/feaather_icons/feather.css">
+
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <section class="container-fluid main">
+        <div class="row">
+
+            <div class="col-12 col-lg-2 vh-100 sidebar d-none d-lg-block shadow overflow-scroll">   <!-- SideBar  -->
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <div class="">
+                        <div class="d-inline-block">
+                            <i class="feather-anchor text-primary" style="font-size: 2em;"></i>
+                        </div>
+                        
+                        <div class="d-inline-block">
+                            <span class=" h4 text-primary fw-bold">DashBorad</span>
+                        </div>
+                    </div>
+                    <div class="hide-sidebar-btn btn-link d-block d-lg-none">
+                        <i class="feather-x text-primary" style="font-size: 2em;"></i>
+                    </div>
+                </div>
+                <hr>
+                <ul class="nav flex-column nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" aria-current="page" href="index.html">
+                          <div class="nav-content">
+                            <i class="feather feather-home"></i>
+                            DashBorad
+                          </div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">
+                            <div class="d-flex justify-content-between nav-content">
+                                <span class="">
+                                    <i class="feather feather-shopping-cart"></i>
+                                    Today Order
+                                </span>
+                                <span class="badge rounded-pill bg-danger">19</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">
+                            <div class="nav-content">
+                                <i class="feather feather-command"></i>
+                                Recent Items
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">
+                            <div class="nav-content">
+                                <i class="feather feather-database"></i>
+                                Data Analysis
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">
+                            <div class="nav-content">
+                                <i class="feather feather-file-text"></i>
+                                Plane Page
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0 text-muted fw-bolder text-uppercase" aria-current="page" href="#">
+                          Item Management
+                      </a>
+                    </li> <!---->
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="item_add.html">
+                            <div class="nav-content">
+                                <i class="feather feather-plus-circle"></i>
+                                Add Item
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-secondary" aria-current="page" href="item_list.html">
+                            <div class="d-flex justify-content-between nav-content">
+                                <span class="">
+                                    <i class="feather feather-list"></i>
+                                    Item List
+                                </span>
+                                <span class="badge rounded-pill bg-danger">76</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0 text-muted fw-bolder text-uppercase" aria-current="page" href="#">
+                            User Management
+                        </a>
+                    </li> <!---->
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">
+                            <div class="nav-content">
+                                <i class="feather feather-user-plus"></i>
+                                Create User
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">
+                            <div class="d-flex justify-content-between nav-content">
+                                <span class="">
+                                    <i class="feather feather-users"></i>
+                                    Manage User
+                                </span>
+                                <span class="badge rounded-pill bg-danger">98</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">
+                            <div class="nav-content">
+                                <i class="feather feather-user-x"></i>
+                                Banned Users
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">
+                            <div class="nav-content">
+                                <i class="feather feather-bar-chart-2"></i>
+                                User Analysis
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">
+                            <div class="nav-content">
+                                <i class="feather feather-user-check"></i>
+                                Your Profile
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-10 p-2 vh-100 content">   <!--main content-->
+                <div class="row header">    <!--header menu-->
+                    <div class="col-12">
+                        <div class="p-2 p-lg-3 accordion-collapse bg-primary rounded d-flex justify-content-between align-content-center">
+                            <div class="show-sidebar-btn btn-link d-block d-lg-none">  <!--sidebar menu btn-->
+                                <i class="feather-menu text-light" style="font-size: 2em;"></i>
+                            </div>
+                            <form action="" method="post">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" placeholder="Searching..." >
+                                    <button class="btn btn-light mx-1">
+                                        <i class="feather-search text-primary"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/user/avatar3.jpg" class="profile-img" alt="">
+                                    <span>Si Thu Aung</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="profile.html">Edit Your Profile</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="feather-log-out" style="font-size: 1em;"></i>
+                                            Logout
+                                        </a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">   <!-- Breadcrumb-->
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb my-3">
+                              <li class="breadcrumb-item text-primary" onclick="anchor('index.html')" style="cursor: pointer;">
+                                    Home
+                              </li>
+                              <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                            </ol>
+                          </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card border-0 shadow">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-start">
+                                    <i class="feather feather-user"></i>
+                                    <h6 class="mb-0">Profile</h6>
+                                </div>
+                                <hr>
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-12">
+                                                    <dvi class="row mb-3">
+                                                        <div class="col-4">
+                                                            <img src="img/user/me.jpg" id="output" class="rounded rounded-circle" width="100px" alt="avatar">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <label for="uploadPhoto" class="form-label" style="cursor: pointer;">
+                                                                Upload Photo
+                                                            </label>
+                                                            <i class="feather-info pe-1" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="only support png, jpg, jpeg."></i>
+                                                            <div class="input-group">
+                                                                <input class="form-control form-control-sm fileUpload" onchange="uploadFile(event)" type="file" id="uploadPhoto" accept="image/jpeg, image/png" required   multiple>
+                                                                <label class="input-group-text" for="uploadPhoto">
+                                                                    <i class="feather feather-upload"></i>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </dvi>
+                                                    <div class="mb-3 mb-md-1 mb-lg-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value="dashborad@gmail.com">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-12">
+                                                    <div class="mb-3 mb-md-5 mb-lg-3">
+                                                        <label for="_name" class="form-label">Name</label>
+                                                        <input type="text" placeholder="your name" class="form-control" value="Si Thu Aung" id="_name">
+                                                    </div>
+                                                    <div class="mb-3 mb-md-1">
+                                                        <label for="passwordFormControl" class="form-label">Password</label>
+                                                        <div class="input-group">
+                                                            <input type="password" class="form-control" id="passwordFormControl" value="hihihihi" placeholder="password">
+                                                            <span class="input-group-text btn btn-pass btn-primary">
+                                                                <i class="feather feather-eye" id="togglePass"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="feather feather-user-check"></i>
+                                        Update Profile
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>  <!-- Jquery file link -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>  <!-- bootstrap file link -->
+    <script src="js/main.js"></script> <!-- Main JS file link -->
+    <script>
+
+        var uploadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+
+        $('.btn-pass').click((e)=>{
+            let currentBtn = $('#togglePass');
+            // toggle the eye off icon
+            $(currentBtn).toggleClass('feather-eye-off');
+
+            const currentInput = $('.btn-pass').prev();
+            if($(currentBtn).hasClass('feather-eye-off')){
+                currentInput.attr("type", "text");
+            }else{
+                currentInput.attr("type", "password");
+            };
+        });
+        
+
+    </script>
+</body>
+</html>
